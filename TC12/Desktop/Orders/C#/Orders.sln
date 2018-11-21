@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders", "Orders.csproj", "{591C3E59-8FB7-4592-9074-2D9CFB088EC4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{591C3E59-8FB7-4592-9074-2D9CFB088EC4}.Debug.ActiveCfg = Debug|.NET
+		{591C3E59-8FB7-4592-9074-2D9CFB088EC4}.Debug.Build.0 = Debug|.NET
+		{591C3E59-8FB7-4592-9074-2D9CFB088EC4}.Release.ActiveCfg = Release|.NET
+		{591C3E59-8FB7-4592-9074-2D9CFB088EC4}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

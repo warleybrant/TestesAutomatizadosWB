@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OrdersSample.Views.OrdersPage"
+             xmlns:vm="clr-namespace:OrdersSample.ViewModels;"
+             Title="Orders Sample">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New" Clicked="NewItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.BindingContext>
+        <vm:OrdersViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="FillAndExpand">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!-- List of items in main page -->
+                <ListView 
+                    x:Name="ItemsListView"
+                    ItemsSource="{Binding Items}"
+                    VerticalOptions="FillAndExpand"
+                    HasUnevenRows="true"
+                    RefreshCommand="{Binding LoadItemsCommand}"
+                    IsPullToRefreshEnabled="true"
+                    IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                    CachingStrategy="RecycleElement"
+                    ItemSelected="OnItemSelected"
+                    Grid.Row="1" 
+                    Grid.ColumnSpan="3"
+                 >
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="5">
+                                    <Label 
+                                        Text="{Binding CustomerName}" 
+                                        LineBreakMode="NoWrap" 
+                                        Style="{DynamicResource ListItemTextStyle}" 
+                                        FontSize="18"
+                                    />
+                                    <Label 
+                                        Text="{Binding Description}" 
+                                        LineBreakMode="NoWrap"
+                                        Style="{DynamicResource ListItemDetailTextStyle}"
+                                        FontSize="14"
+                                    />
+                                </StackLayout>
+
+                                <ViewCell.ContextActions>
+                                    <MenuItem Clicked="EditItem_Clicked" CommandParameter="{Binding .}" Text="Edit" />
+                                    <MenuItem Clicked="DeleteItem_Clicked" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" />
+                                </ViewCell.ContextActions>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

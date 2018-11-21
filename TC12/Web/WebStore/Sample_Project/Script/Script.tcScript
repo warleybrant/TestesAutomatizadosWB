@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="SimpleTestJavascript_Sample" key="{F781B94E-43E9-43D3-AFA7-E8832408DDEC}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="SimpleTestJavascript_Sample.js" />
+		</child>
+		<child name="Events_Handler" key="{E6318575-8EAE-420B-BECF-BB8812B365E8}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Events_Handler.js" />
+		</child>
+	</children>
+	<folders />
+</Root>

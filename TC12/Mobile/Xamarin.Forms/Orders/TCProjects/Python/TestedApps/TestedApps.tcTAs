@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" version="1140" key="{4068D6C9-B633-4F7B-A990-446881B58163}" type="Tested Applications" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}">
+	<config nodeName="TestedApps" />
+	<testData />
+	<data />
+	<children>
+		<child key="{E977BFF2-F35C-4109-8553-E1AFA60B43B3}" type="Tested Application" typeId="{FD30A383-63C2-4C25-948C-2595C0F81320}">
+			<config nodeName="Orders_Android" autorunOnRecording="False" enabled="True" count="1" useFeaturedRuntimeObject="True" userChangeName="True">
+				<runModeParams activeRunMode="Android">
+					<param name="Android" parameters="" workFolder="" apkFileName="..\..\Apps\Orders.Orders-Signed.apk" deploy="True" keepDataAndCache="False" storeBackup="True" backupFileName="..\..\Apps\Orders.Orders-Signed_ORIGINAL_BACKUP.apk" signAPKWithCustom="False" keystorePath="" alias="" keystorePassword="" keyPassword="" />
+				</runModeParams>
+			</config>
+			<testData />
+			<data />
+		</child>
+		<child key="{19E0A0C4-2D22-42B0-8693-7E24B2C4BD0D}" type="Tested Application" typeId="{FD30A383-63C2-4C25-948C-2595C0F81320}">
+			<config nodeName="Orders_iOS" autorunOnRecording="False" enabled="True" count="1" useFeaturedRuntimeObject="True" userChangeName="True">
+				<runModeParams activeRunMode="iOS">
+					<param name="iOS" parameters="" workFolder="" ipaFileName="..\..\Apps\OrdersSample.ipa" deploy="True" storeBackup="True" backupFileName="..\..\Apps\OrdersSample_ORIGINAL_BACKUP.ipa" rootCert="" devCert="" pemFile="" provisioningFile="" />
+				</runModeParams>
+			</config>
+			<testData />
+			<data />
+		</child>
+	</children>
+	<folders />
+</Root>

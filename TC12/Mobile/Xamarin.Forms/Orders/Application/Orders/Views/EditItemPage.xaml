@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:OrdersSample.Models"
+             x:Class="OrdersSample.Views.EditItemPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <views:IntEnumConverter x:Key="IntEnumConverterKey"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout Spacing="10" Padding="15">
+
+                <!-- Product Info -->
+                <Label Text="Product Name:" FontSize="Medium" />
+                <Picker x:Name="ProductNamePicker" VerticalOptions="{Binding CenterAndExpand}" SelectedIndex="{Binding EditingItem.ProductName, Converter={StaticResource IntEnumConverterKey}}" >
+                    <Picker.Items>
+                        <x:String>MyMoney</x:String>
+                        <x:String>Family Album</x:String>
+                        <x:String>Screen Saver</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Quantity:" FontSize="Medium" />
+                <Entry x:Name="QuantityEntry" Text="{Binding EditingItem.Quantity}" FontSize="Medium"  Keyboard="Numeric" Placeholder="Quantity"/>
+
+                <!-- Customer Info -->
+                <BoxView HeightRequest="20" BackgroundColor="Transparent"/>
+                <BoxView HeightRequest="2" BackgroundColor="Black"/>
+                <BoxView HeightRequest="20" BackgroundColor="Transparent"/>
+
+                <Entry x:Name="NameEntry" Text="{Binding EditingItem.CustomerName}" FontSize="Medium"  Keyboard="Text" Placeholder="Customer name"/>
+                <Entry x:Name="StreetEntry" Text="{Binding EditingItem.Street}" FontSize="Medium" Keyboard="Text" Placeholder="Customer street"/>
+                <Entry x:Name="CityEntry" Text="{Binding EditingItem.City}" FontSize="Medium" Keyboard="Text" Placeholder="Customer city"/>
+                <Entry x:Name="StateEntry" Text="{Binding EditingItem.State}" FontSize="Medium" Keyboard="Text"  Placeholder="Customer state"/>
+
+                <!-- Payment info -->
+                <BoxView HeightRequest="20" BackgroundColor="Transparent"/>
+                <BoxView HeightRequest="2" BackgroundColor="Black"/>
+                <BoxView HeightRequest="20" BackgroundColor="Transparent"/>
+
+                <Label Text="Card:" FontSize="Medium" />
+                <Picker x:Name="CardNamePicker" VerticalOptions="{Binding CenterAndExpand}" SelectedIndex="{Binding EditingItem.CardName, Converter={StaticResource IntEnumConverterKey}}}" >
+                    <Picker.Items>
+                        <x:String>Visa</x:String>
+                        <x:String>Master Card</x:String>
+                        <x:String>American Express</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Entry x:Name="CardNumberEntry" Text="{Binding EditingItem.CardNumber}" FontSize="Medium" Keyboard="Numeric" Placeholder="Card number"/>
+
+                <Label Text="Expire date (yyyy-mm-dd):" FontSize="Medium" />
+                <DatePicker x:Name="CardDatePicker" VerticalOptions="CenterAndExpand" Date="{Binding EditingItem.CardExpireDate}" Format="yyyy-MM-dd" />
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>

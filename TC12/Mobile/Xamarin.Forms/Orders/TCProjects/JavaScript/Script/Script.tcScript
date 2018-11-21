@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="Orders_Xamarin_Forms_JavaScript" key="{8624E53A-1EB4-4689-9F00-0FD87B2820FD}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Orders_Xamarin_Forms_JavaScript.js" />
+		</child>
+		<child name="Orders_Main_JavaScript" key="{DB924972-268E-44C8-AEC6-53862F2307E7}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Orders_Main_JavaScript.js" />
+		</child>
+	</children>
+	<folders />
+</Root>

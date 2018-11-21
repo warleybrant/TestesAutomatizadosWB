@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="Orders_JavaScript" key="{9FAB731C-0B52-43F6-9A01-9CA081C327C7}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Orders_JavaScript.js" />
+		</child>
+	</children>
+	<folders />
+</Root>

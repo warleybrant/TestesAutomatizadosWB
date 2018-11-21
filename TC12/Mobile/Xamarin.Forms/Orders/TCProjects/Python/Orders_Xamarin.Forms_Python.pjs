@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="12.0" key="{BFAB4588-3247-4598-958D-F2FA143E76C0}">
+	<children>
+		<child name="Orders_Xamarin.Forms_Python" key="{F712C064-1767-4DFF-8E05-DD34D3D7F658}" type="Project" typeId="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}" pluginName="">
+			<data path="Orders_Xamarin.Forms_Python.mds" />
+		</child>
+	</children>
+	<folders />
+	<testItems key="{892F7B67-02CC-42F4-A473-D10F2A1B4A2B}">
+		<children>
+			<testItem key="{F712C064-1767-4DFF-8E05-DD34D3D7F658}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{8721FEAA-39D7-47F9-8447-5C744D96A3E0}">
+		<data Version="3" />
+	</variables>
+	<analysis key="{AFF46CE6-28EE-4EB8-BC00-7FA9D2C9F8A6}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}" />
+</Root>

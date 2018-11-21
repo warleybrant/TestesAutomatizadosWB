@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:OrdersSample.Models"
+             x:Class="OrdersSample.Views.ViewItemPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Edit" Clicked="Edit_Clicked" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <views:DateConverter x:Key="DateConverterKey"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout Spacing="10" Padding="15">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <!-- Product Info -->
+                    <Label Text="Product Name:" FontSize="Medium" Grid.Row="0" Grid.Column="0"/>
+                    <Label Text="{Binding Item.ProductName}" FontSize="Medium" Grid.Row="0" Grid.Column="1" />
+
+                    <Label Text="Quantity:" FontSize="Medium"  Grid.Row="1" Grid.Column="0"/>
+                    <Label Text="{Binding Item.Quantity}" FontSize="Medium" Grid.Row="1" Grid.Column="1"/>
+
+                    <Label Text="Price per unit ($):" FontSize="Medium"  Grid.Row="2" Grid.Column="0"/>
+                    <Label Text="{Binding Item.Price}" FontSize="Medium"  Grid.Row="2" Grid.Column="1"/>
+
+                    <Label Text="Discont ($):" FontSize="Medium"  Grid.Row="3" Grid.Column="0"/>
+                    <Label Text="{Binding Item.Discount}" FontSize="Medium" Grid.Row="3" Grid.Column="1" />
+
+                    <Label Text="Total ($):" FontSize="Medium"  Grid.Row="4" Grid.Column="0"/>
+                    <Label Text="{Binding Item.Total}" FontSize="Medium"  Grid.Row="4" Grid.Column="1"/>
+
+                    <!-- Customer Info -->
+
+                    <Label Text="Name:" FontSize="Medium"  Grid.Row="6" Grid.Column="0"/>
+                    <Label Text="{Binding Item.CustomerName}" FontSize="Medium"  Grid.Row="6" Grid.Column="1"/>
+
+                    <Label Text="Street:" FontSize="Medium"  Grid.Row="7" Grid.Column="0"/>
+                    <Label Text="{Binding Item.Street}" FontSize="Medium" Grid.Row="7" Grid.Column="1"/>
+
+                    <Label Text="City:" FontSize="Medium"  Grid.Row="8" Grid.Column="0"/>
+                    <Label Text="{Binding Item.City}" FontSize="Medium" Grid.Row="8" Grid.Column="1"/>
+
+                    <Label Text="State:" FontSize="Medium"  Grid.Row="9" Grid.Column="0"/>
+                    <Label Text="{Binding Item.State}" FontSize="Medium" Grid.Row="9" Grid.Column="1"/>
+
+                    <!-- Payment info -->
+
+
+                    <Label Text="Card:" FontSize="Medium"  Grid.Row="11" Grid.Column="0"/>
+                    <Label Text="{Binding Item.CardName}"  FontSize="Medium" Grid.Row="11" Grid.Column="1"/>
+
+                    <Label Text="Card Number:" FontSize="Medium"  Grid.Row="12" Grid.Column="0"/>
+                    <Label Text="{Binding Item.CardNumber}" FontSize="Medium" Grid.Row="12" Grid.Column="1"/>
+
+                    <Label Text="Expire date (yyyy-mm-dd):" FontSize="Medium"  Grid.Row="13" Grid.Column="0"/>
+                    <Label Text="{Binding Item.CardExpireDate, Converter={StaticResource DateConverterKey}}" FontSize="Medium" Grid.Row="13" Grid.Column="1"/>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>

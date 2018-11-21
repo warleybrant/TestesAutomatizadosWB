@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" version="12.0">
+	<children>
+		<child name="BrowserLoop_Sample" key="{1C53CA03-245F-4377-BE17-539542934781}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="BrowserLoop_Sample.tcKDTest" />
+		</child>
+		<child name="DataLoop_Sample" key="{F7538026-FEFE-4D51-9188-C9A90C1AF514}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="DataLoop_Sample.tcKDTest" />
+		</child>
+		<child name="BrowserAndDataLoop_Sample" key="{C03C7E29-047B-45A6-8F07-9B0A00039193}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="BrowserAndDataLoop_Sample.tcKDTest" />
+		</child>
+		<child name="SimpleTest_Sample" key="{018273D5-6804-4AB5-9002-CBDC098F8154}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="SimpleTest_Sample.tcKDTest" />
+		</child>
+	</children>
+	<folders>
+		<folder caption="Samples" description="A logical folder that is used to organize project items and elements." moniker="">
+			<references>
+				<ref key="{C03C7E29-047B-45A6-8F07-9B0A00039193}" />
+				<ref key="{1C53CA03-245F-4377-BE17-539542934781}" />
+				<ref key="{F7538026-FEFE-4D51-9188-C9A90C1AF514}" />
+				<ref key="{018273D5-6804-4AB5-9002-CBDC098F8154}" />
+			</references>
+		</folder>
+	</folders>
+</Root>

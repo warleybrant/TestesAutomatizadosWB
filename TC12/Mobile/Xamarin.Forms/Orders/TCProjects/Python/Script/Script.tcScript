@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="Orders_Main_Py" key="{132AC5BC-93CE-4785-B3C0-A528E7287F60}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Orders_Main_Py.py" />
+		</child>
+		<child name="Orders_Xamarin_Forms_Py" key="{826EE7C0-793A-4748-BEA5-3412C7F68845}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Orders_Xamarin_Forms_Py.py" />
+		</child>
+	</children>
+	<folders />
+</Root>
